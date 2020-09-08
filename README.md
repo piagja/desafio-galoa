@@ -1,2 +1,3 @@
-# desafio-galoa
-Repositório para o desafio Galoá 
+# Desafio Galoá
+
+Repositório para o desafio Galoá de Frontend usando HTML + CSS.
