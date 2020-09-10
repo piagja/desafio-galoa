@@ -5,115 +5,51 @@
 
 /* config global */
 
-* {
-  text-decoration: none;
-  list-style: none;
+body, p, h1, ul, li, blockquote {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: 'Quicksand', sans-serif;
-  box-sizing: border-box;
 }
 
-/* config grid layout */
+li {
+  list-style: none;
+}
 
-.container {
-  height: 100vh;
+a {
+  text-decoration: none;
+}
+
+/* end config global */
+
+/* estrutura grid geral */
+
+.estrutura {
   display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 70px 4fr 1fr;
+  grid-template-columns: 1fr 3fr 250px;
+  grid-template-areas: 
+    "sidenav header header"
+    "sidenav content content"
+    "sidenav footer footer"
+  ;
 }
 
-/* fim config global */
+/* fim estrutura grid geral */
 
-/* inicio header */
-
-header {
-  background: #FDF1EB;
+.header {
+  grid-area: header;
 }
 
-header .wrapper {
-  display: flex;
-  justify-content: space-around;
-  padding: 5px;
+.sidenav {
+  grid-area: sidenav;
 }
 
-.header-text {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #725C5C;
+.content {
+  grid-area: content;
 }
 
-.header-text-p {
-  font-size: 22px;
-  margin: 5px 0;
+.footer {
+  grid-area: footer;
 }
-
-header button {
-  width: 100px;
-  height: 25px;
-  border-radius: 3px;
-  border: 1px solid gray;
-  background: #FDF1eb;
-  margin-top: 15px;
-}
-
-.header-text-span {
-  margin: 5px;
-}
-
-header button img {
-  margin: -5px;
-  padding-right: 5px;
-}
-
-.header-login-img {
-  border-radius: 50px;
-  height: 30px;
-  margin-top: 10px;
-}
-
-/* fim header */
-
-nav {
-  grid-row: 1/4;
-}
-
-main {
-  background: brown;
-}
-
-footer {
-  background: green;
-}
-
-/* inicio sidebar */
-
-.sidebar {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);;
-}
-
-.sidebar ul li {
-  padding: 15px;
-  border-bottom: 2px solid rgba(100, 100, 100, 0.3);
-}
-
-.sidebar ul li:hover {
-  background: #FDF1Eb;
-  border-left: 5px solid #EE7A3a;
-}
-
-.sidebar h2 {
-  color: #fff;
-  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
-  padding: 20px;
-  text-align: center;
-}
-
-.sidebar img {
-  margin-left: 15px;
-}
-
-/* fim sidebar */
