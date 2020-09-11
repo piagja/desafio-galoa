@@ -257,6 +257,19 @@ a {
 
 /** inicio painel resumo */
 
+.content-top-resumo {
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  max-width: 91%;
+}
+
+.content-top-resumo p {
+  
+}
+
 .content-resumo-titulo h3 {
   background: #FDF1EB;
   box-sizing: border-box;
@@ -278,12 +291,8 @@ a {
   color: #5C5C5C;
 }
 
-.content-top-resume {
-  border-left: 1px solid #ECECEC;
-  border-right: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
-  box-sizing: border-box;
-  border-radius: 3px;
+.content-resumo > p {
+  max-width: 90%;
 }
 
 /** fim painel resumo **/
@@ -379,6 +388,7 @@ a {
   text-align: left;
   padding: 25px;
   margin: 15px;
+  max-width: 90%;
 }
 
 .card-likes, .card-replies {
@@ -489,3 +499,11 @@ a {
 }
 
 /** fim footer **/
+
+/** css resumo expandido **/
+
+.ler-mais {
+    display: none;
+  }
+
+/** **/
