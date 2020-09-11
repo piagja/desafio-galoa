@@ -29,7 +29,7 @@ a {
 
 .estrutura {
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 200px 4fr;
   grid-template-areas: 
     "sidenav header"
     "sidenav content"
@@ -50,7 +50,7 @@ a {
 
 .header-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header-content-text {
@@ -87,6 +87,8 @@ a {
 
 .sidenav {
   grid-area: sidenav;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .sidenav-logo {
@@ -96,9 +98,14 @@ a {
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 }
 
+.sidenav img {
+  height: 230px;
+  width: 200px;
+}
+
 .sidenav ul li {
-  padding: 15px;
-  border-bottom: 1px solid rgba(10, 10, 10, 0.2)
+  padding: 12px;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
 }
 
 .sidenav ul li:hover {
@@ -115,7 +122,313 @@ a {
   margin: 15px;
 }
 
-/** fim content **/
+.content-titulo {
+  display: flex;
+}
+
+.content-titulo h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ED7839;
+  max-width: 50%;
+  margin-left: 152px;
+}
+
+.content-titulo button {
+  background: #ED7839;
+  border-radius: 4px;
+  height: 18px;
+  width: 100px;
+  margin-top: 6px;
+  border: none;
+  color: white;
+  height: 35px;
+}
+
+/** config botões download, favorito e doi **/
+
+.content-button-download,
+.content-button-favorite,
+.content-button-doi {
+  margin: 0 5px;
+}
+
+/** fim config botões **/
+
+/** inicio botão download **/
+
+.content-titulo .content-button-download {
+  width: 160px;
+  font-weight: bold;
+  margin-left: 16.92rem;
+}
+
+.content-button-download i {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/** fim botão download **/
+
+/** inicio botão favorito **/
+
+.content-titulo .content-button-favorite {
+  width: 50px;
+}
+
+/** fim botão favorito **/
+
+/** inicio botao doi **/
+
+.content-titulo .content-button-doi {
+  width: 50px;
+}
+
+.content-button-doi img {
+  width: 20px;
+}
+
+/** fim botão doi **/
+
+/** inicio video overlay e detalhes **/
+
+.video-overlay {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.box-detalhes {
+  margin-left: 15px;
+}
+
+.box-detalhes > p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #ED7839;
+}
+
+.box-detalhes-video {
+  border: 1px solid #FDF1EB;
+  height: 90%;
+}
+
+.box-detalhes-content {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+  width: 250px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.box-detalhes h3 {
+  background: #FDF1EB;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0;
+  padding: 10px;
+}
+
+.box-detalhes h4 {
+  margin-bottom: 5px;
+}
+
+.box-detalhes-video p {
+  padding-top: 6px;
+}
+
+/** fim overlay video overlay e detalhes */
+
+/** inicio painel resumo */
+
+.content-resumo-titulo h3 {
+  background: #FDF1EB;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.content-resumo {
+  margin: 10px;
+  font-family: 'Quicksand', sans-serif; 
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #5C5C5C;
+}
+
+.content-top-resume {
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+/** fim painel resumo **/
+
+/** inicio painel discussões **/
+
+.container-discussoes {
+  border-right: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  border-left: 1px solid #ECECEC;
+}
+
+.content-discussoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-discussoes > h3 {
+  background: #FDF1EB;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.criar-topico-discussoes {
+  text-align: center;
+}
+
+.criar-topico-discussoes h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ED7839;
+}
+
+.criar-topico-discussoes .content-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 45px 0 45px 275px;
+}
+
+.criar-topico-discussoes blockquote {
+  max-width: 70%;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+.criar-topico-discussoes hr {
+  max-width: 70%;
+  border: 1px solid #E7E7E7;
+}
+
+.content-button {
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  height: 35px;
+  width: 120px;
+  font-weight: bold;
+  transform: translateY(25px);
+}
+
+/** fim painel discussões **/
+
+/** inicio painel cards **/
+
+/** three dots **/
+
+.three-dots {
+  color: #ED7839;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.topicos-card .card {
+  border: 1px solid black;
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.card {
+  text-align: left;
+  padding: 25px;
+  margin: 15px;
+}
+
+.card-likes, .card-replies {
+  margin-top: 10px;
+}
+
+.card p {
+  margin: 5px 0 3px 1px;
+}
+
+.card button {
+  background: #ED7839;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  border: none;
+  width: 30px;
+  height: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.card-options {
+  margin-top: 10px;
+  display: flex;
+  max-width: 13%;
+  justify-content: space-between;
+}
+
+.topicos-card h3 {
+  font-family: 'Quicksand', sans-serif;
+  margin: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ED7839;
+}
+
+.topicos-card small {
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+
+
+/** fim painel card **/
 
 /** inicio footer **/
 
