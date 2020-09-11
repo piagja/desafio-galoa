@@ -317,25 +317,24 @@ a {
   border-radius: 3px 3px 0px 0px;
   margin: 0;
   padding: 10px;
-  width: 100%;
-}
-
-.criar-topico-discussoes {
-  text-align: center;
+  max-width: 100%;
 }
 
 .criar-topico-discussoes h3 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 21px;
   color: #ED7839;
+  text-align: center;
+  max-width: 83%;
 }
 
 .criar-topico-discussoes .content-icons {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   width: 50%;
   margin: 45px 0 45px 275px;
 }
@@ -361,6 +360,7 @@ a {
   width: 120px;
   font-weight: bold;
   transform: translateY(25px);
+  margin-left: 38%;
 }
 
 /** fim painel discussões **/
@@ -503,7 +503,12 @@ a {
 /** css resumo expandido **/
 
 .ler-mais {
-    display: none;
-  }
+  display: none;
+}
+
+.toggle-ver-mais {
+  cursor: pointer;
+}
+
 
 /** **/

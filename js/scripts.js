@@ -1,5 +1,5 @@
 /* configuração do resumo expandido */
-function resumoExpandido() { 
+function resumoExpandido () {
   const tresPontos = document.querySelector('.ler-menos')
   const maisTexto = document.querySelector('.ler-mais')
   const toggleButton = document.querySelector('.toggle-ver-mais')
