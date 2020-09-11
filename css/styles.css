@@ -427,13 +427,65 @@ a {
   color: #5C5C5C;
 }
 
-
 /** fim painel card **/
 
 /** inicio footer **/
 
 .footer {
   grid-area: footer;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-self: space-around;
+  align-self: space-between;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "footer footer footer";
+}
+
+.footer-logo {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 86px;
+  color: #341947;
+  margin-left: 8px;
+}
+
+.footer-logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #624D71;
+  margin-left: 24px;
+}
+
+.footer-logo button {
+  background: #71478E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  max-width: 58%;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.15em;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 13px;
+}
+
+.footer-texto {
+  text-align: left;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 
 /** fim footer **/
