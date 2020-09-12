@@ -29,7 +29,7 @@ a {
 
 .estrutura {
   display: grid;
-  grid-template-columns: 200px 4fr;
+  grid-template-columns: 250px 4fr;
   grid-template-areas: 
     "sidenav header"
     "sidenav content"
@@ -51,6 +51,7 @@ a {
 .header-content {
   display: flex;
   justify-content: space-between;
+  margin-left: 50px;
 }
 
 .header-content-text {
@@ -135,7 +136,7 @@ a {
   letter-spacing: 0.05em;
   color: #ED7839;
   max-width: 50%;
-  margin-left: 152px;
+  margin-left: 162px;
 }
 
 .content-titulo button {
@@ -221,6 +222,7 @@ a {
 .box-detalhes-video {
   border: 1px solid #FDF1EB;
   height: 90%;
+  margin-right: 8px;
 }
 
 .box-detalhes-content {
@@ -264,10 +266,6 @@ a {
   box-sizing: border-box;
   border-radius: 3px;
   max-width: 91%;
-}
-
-.content-top-resumo p {
-  
 }
 
 .content-resumo-titulo h3 {
@@ -329,7 +327,7 @@ a {
   line-height: 21px;
   color: #ED7839;
   text-align: center;
-  max-width: 83%;
+  max-width: 86%;
 }
 
 .criar-topico-discussoes .content-icons {
@@ -374,6 +372,12 @@ a {
   color: #ED7839;
   font-size: 30px;
   font-weight: bold;
+}
+
+.topicos-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .topicos-card .card {
@@ -490,7 +494,7 @@ a {
   height: 45px;
   margin-top: 10px;
   margin-bottom: 20px;
-  margin-left: 13px;
+  margin-left: 18px;
 }
 
 .footer-texto {
