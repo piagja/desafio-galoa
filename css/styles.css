@@ -303,6 +303,7 @@ a {
   border-right: 1px solid #ECECEC;
   border-bottom: 1px solid #ECECEC;
   border-left: 1px solid #ECECEC;
+  max-width: 91%;
 }
 
 .content-discussoes {
