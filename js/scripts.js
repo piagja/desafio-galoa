@@ -18,3 +18,14 @@ function resumoExpandido () {
     toggleButton.innerHTML = 'ver menos'
   }
 }
+
+function respostaExpandida () {
+  const cardExpandido = document.querySelector('.card-expandido')
+
+  console.log('a clicado')
+  if (cardExpandido.style.display === 'none') {
+    cardExpandido.style.display = 'inline'
+  } else {
+    cardExpandido.style.display = 'none'
+  }
+}

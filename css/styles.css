@@ -136,7 +136,7 @@ a {
   letter-spacing: 0.05em;
   color: #ED7839;
   max-width: 50%;
-  margin-left: 162px;
+  margin-left: 140px;
 }
 
 .content-titulo button {
@@ -165,7 +165,7 @@ a {
 .content-titulo .content-button-download {
   width: 160px;
   font-weight: bold;
-  margin-left: 16.92rem;
+  margin-left: 15.9rem;
 }
 
 .content-button-download i {
@@ -396,6 +396,13 @@ a {
   max-width: 90%;
 }
 
+.card-options {
+  margin-top: 10px;
+  display: flex;
+  max-width: 15%;
+  justify-content: space-between;
+}
+
 .card-likes, .card-replies {
   margin-top: 10px;
 }
@@ -415,16 +422,14 @@ a {
   margin-top: 10px;
 }
 
-.card-options {
-  margin-top: 10px;
-  display: flex;
-  max-width: 13%;
-  justify-content: space-between;
+.card-heart {
+  font-size: 18px;
 }
 
 .topicos-card h3 {
   font-family: 'Quicksand', sans-serif;
-  margin: 5px;
+  margin: 2px;
+  margin-bottom: 5px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -460,6 +465,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: "footer footer footer";
+  margin-left: 55px;
 }
 
 .footer-logo {
@@ -515,5 +521,61 @@ a {
   cursor: pointer;
 }
 
+/** fim css resumo expandido **/
+
+/** inicio tópico expandido **/
+
+.card-expandido {
+  display: none;
+}
+
+.card-replies-expandido {
+  background: #F8F8F8;
+  font-family: 'Quicksand', sans-serif;
+  padding: 25px;
+  max-width: 90%;
+  margin-right: 74px;
+  font-size: 16px;
+  color: #4D4D4D;
+  margin-left: 70px;
+  border-right: 1px solid rgba(10, 10, 10, 0.1);
+  border-left: 1px solid rgba(10, 10, 10, 0.1);
+  border-top: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+.card-replies-toggle {
+  cursor: pointer;
+}
+
+.card-replies-expandido p {
+  margin-top: 20px;
+  max-width: 96%;
+  line-height: 20px;
+}
+
+.autor {
+  margin-left: 65rem;
+  color: #EE7A3A;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.autor i {
+  margin-left: 15px;
+}
+
+.coautor {
+  margin-left: 61.2rem;
+  color: #EE7A3A;
+  font-weight: bold;
+  font-size: 18px;
+  border-top: none;
+}
+
+.coautor i {
+  margin-left: 15px;
+}
+
+/** fim tópico expandido **/
 
 /** **/
