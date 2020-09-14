@@ -120,12 +120,47 @@
           <blockquote>
             Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
           </blockquote>
-          <button class='content-button'>+ Criar Tópico</button>
           <hr>
-          TESTESTETTSS
+          <button class='content-button' onclick='showForm()'>+ Criar Tópico</button>
+        </div>
+        <br>
+        
+        <div class="toggle-topico-discussoes">
+        <div class="criando-topico-discussoes">
+          <small>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</small>
+          <div class='criando-topico-form'>
+            <form>
+              <label><strong style='color:#ED7839'>Assunto</strong></label>
+              <br>
+              <input placeholder='Defina um tópico sucinto para notificar os autores...' type='text' />
+              <br>
+              <label><strong style='color:#ED7839'>Conteúdo</strong></label>
+              <br>
+              <textarea></textarea>
+              <div class='criando-topico-ferramentas'>
+                <i class="fas fa-bold bold"><i class="fas fa-italic italic"></i></i>
+                <button onclick='createdTopic()'>ENVIAR</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <br>
+      </div>
+      <div class="topico-criado-wrapper">
+        <div class="topico-criado">
+          <p class='topico-criado-titulo'>Seu topico foi criado com sucesso!</p>
+          <p class='topico-criado-texto'>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido</p>
+          <p><a>Descubra outros Trabalhos!</a></p>
+          <button onclick='reload()'>criar novo tópico</button>
+          <hr>
+        </div>
+
+        <div class="topico-feedback">
+          <i class="fas fa-check-double"></i>
+          <p>Aguardando Feeback dos autores</p>
+          <span><a onclick='reload()' style='cursor: pointer;'>Editar Tópico</a></span>
+        </div>
+      </div>
       <div class='topicos-card'>
         <div class='card'>
           <h3>Assunto da pergunta aparece aqui</h3>

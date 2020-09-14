@@ -10,6 +10,10 @@ body, p, h1, ul, li, blockquote {
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box;
@@ -358,7 +362,7 @@ a {
   height: 35px;
   width: 120px;
   font-weight: bold;
-  transform: translateY(25px);
+  transform: translateY(-28px);
   margin-left: 38%;
 }
 
@@ -578,4 +582,160 @@ a {
 
 /** fim tópico expandido **/
 
-/** **/
+/** inicio criar tópico **/
+
+.toggle-topico-discussoes {
+  display: none;
+}
+
+.criando-topico-discussoes {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 90px
+}
+
+.criando-topico-discussoes small {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+  margin-bottom: 20px;
+}
+
+.criando-topico-form input {
+  width: 89.5%;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.criando-topico-form textarea {
+  width: 89.65%;
+  margin-top: 12px;
+  height: 100px;
+}
+
+.criando-topico-ferramentas {
+  max-width: 90%;
+  background: #EAF1F2;
+  border: 1px solid #CCCCCC;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.criando-topico-ferramentas button {
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  border-radius: 0px 0px 4px 0px;
+  border: none;
+  width: 180px;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bold {
+  transform: translateY(5px)
+}
+
+.bold, .italic {
+  margin-left: 25px;
+}
+
+/** fim criar tópico **/
+
+/** inicio topico criado **/
+
+.topico-criado-wrapper {
+  display: none;
+}
+
+.topico-criado {
+  max-width: 90%;
+  text-align: center;
+}
+
+.topico-criado-titulo {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ED7839;
+  margin-bottom: 20px;
+}
+
+.topico-criado-texto {
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+  margin-bottom: 20px;
+}
+
+.topico-criado a {
+  color: #ED7839;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.topico-criado button {
+  margin-top: 5px;
+  transform: translateY(25px);
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  border: none;
+  height: 35px;
+  width: 170px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.topico-criado hr {
+  max-width: 70%;
+  border: 1px solid #E7E7E7;
+}
+
+.topico-feedback {
+  max-width: 85%;
+  margin-top: 35px;
+  margin-left: 100px;
+  padding: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #DDDDDD;
+}
+
+.topico-feedback i {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.topico-feedback p {
+  margin-bottom: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #707070;
+}
+
+.topico-feedback span {
+  margin-bottom: 15px;
+  text-decoration: underline;
+  color: #ED7839;
+  font-weight: bold;
+}
+
+/** fim topico criado **/
