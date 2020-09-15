@@ -595,6 +595,10 @@ a {
   margin: 90px
 }
 
+.criando-topico-form strong {
+  font-size: 20px;
+}
+
 .criando-topico-discussoes small {
   display: flex;
   justify-content: center;
@@ -604,14 +608,21 @@ a {
 
 .criando-topico-form input {
   width: 89.5%;
+  height: 50px;
   margin-top: 12px;
   margin-bottom: 15px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .criando-topico-form textarea {
   width: 89.65%;
   margin-top: 12px;
   height: 100px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
 }
 
 .criando-topico-ferramentas {
