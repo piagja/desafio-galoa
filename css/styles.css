@@ -78,9 +78,10 @@ a {
 }
 
 .header-content img {
-  height: 35px;
+  height: 40px;
   border-radius: 50%;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-right: 9rem;
 }
 
 .header-content p {
@@ -141,7 +142,8 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-left: 3.7rem;
-  max-width: 78%;
+  margin-right: 15rem;
+  max-width: 100%;
 }
 
 .content-titulo h3 {
@@ -152,6 +154,7 @@ a {
   letter-spacing: 0.05em;
   color: #ED7839;
   max-width: 50%;
+  margin-left: 2px;
 }
 
 .content-titulo button {
@@ -160,16 +163,16 @@ a {
   border: none;
   color: white;
   height: 35px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /** inicio botão download **/
 
 .content-titulo .content-button-download {
-  width: 315px;
+  width: 320px;
   font-weight: bold;
-  font-size: 15px;
-  margin-left: 18rem;
+  font-size: 18px;
+  margin-left: 20rem;
 }
 
 /** fim botão download **/
@@ -203,8 +206,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-right: 20.5rem;
   max-width: 100%;
+}
+
+.video-overlay img {
+  margin-right: 5rem;
+  height: 430px;
+}
+
+.box-detalhes {
+  margin-right: 16.7rem;
 }
 
 .box-detalhes-video small {
@@ -258,6 +269,7 @@ a {
 
 .box-detalhes-video p {
   padding-top: 6px;
+  padding-bottom: 2px;
 }
 
 /** fim overlay video overlay e detalhes */
@@ -270,7 +282,8 @@ a {
   border-bottom: 1px solid #ECECEC;
   box-sizing: border-box;
   border-radius: 3px;
-  max-width: 91%;
+  max-width: 75.7%;
+  margin-left: 3.7rem;
 }
 
 .content-resumo-titulo h3 {
@@ -306,7 +319,8 @@ a {
   border-right: 1px solid #ECECEC;
   border-bottom: 1px solid #ECECEC;
   border-left: 1px solid #ECECEC;
-  max-width: 91%;
+  max-width: 75.7%;
+  margin-left: 3.5rem;
 }
 
 .content-discussoes {
@@ -404,8 +418,8 @@ a {
 .card-options {
   margin-top: 10px;
   display: flex;
-  max-width: 15%;
-  justify-content: space-between;
+  max-width: 20%;
+  justify-content: space-evenly;
 }
 
 .card-likes, .card-replies {
@@ -457,8 +471,8 @@ a {
 /** inicio footer **/
 
 .footer img {
-  height: 12rem;
-  margin: 18px auto;
+  margin: 1rem 0 0 10rem;
+  text-align: center;
 }
 
 /* .footer-wrapper {
@@ -588,6 +602,8 @@ a {
 
 .toggle-topico-discussoes {
   display: none;
+  margin-top: -80px;
+  margin-bottom: -50px;
 }
 
 .criando-topico-discussoes {
@@ -666,7 +682,7 @@ a {
 }
 
 .topico-criado {
-  max-width: 90%;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -718,9 +734,9 @@ a {
 }
 
 .topico-feedback {
-  max-width: 85%;
+  max-width: 88.2%;
   margin-top: 35px;
-  margin-left: 100px;
+  margin-left: 62px;
   padding: 10px;
   padding-top: 15px;
   display: flex;
