@@ -1,6 +1,6 @@
 /** imports **/
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap'));
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /** inicio config global **/
@@ -16,7 +16,6 @@ button {
 
 body {
   font-family: 'Quicksand', sans-serif;
-  box-sizing: border-box;
 }
 
 li {
@@ -73,8 +72,13 @@ a {
   text-align: center;
 }
 
+.header-fake-button a {
+  color: black;
+}
+
 .header-fake-button i {
   margin: 8px 8px;
+  color: black;
 }
 
 .header-content img {
@@ -102,6 +106,7 @@ a {
   text-align: center;
   padding: 0.5px;
   color: white;
+  height: 4.25rem;
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 }
 
@@ -111,19 +116,20 @@ a {
   margin-left: 15px;
 }
 
-.sidenav ul li {
+.menu-links-list li {
   padding: 12px;
   border-bottom: 2px solid #E5E5E5;
 }
 
-.sidenav ul li a, a:visited, a:link, a:active {
-  font-weight: 500;
+.menu-links-list a {
+  font-weight: 600;
   font-size: 15px;
   color: #725C5C;
   text-decoration: none;
+  padding: 12px;
 }
 
-.sidenav ul li:hover {
+.menu-links-list li:hover {
   background: #FDF1EB;
   border-left: 5px solid #ED7839;
 }
@@ -164,15 +170,20 @@ a {
   color: white;
   height: 35px;
   margin-right: 5px;
+  width: 140px;
 }
 
 /** inicio botão download **/
 
 .content-titulo .content-button-download {
-  width: 320px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   margin-left: 20rem;
+}
+
+.content-titulo .content-button-download i {
+  margin: 5px;
+  font-size: 16px;
 }
 
 /** fim botão download **/
@@ -226,9 +237,8 @@ a {
   text-align: center;
   margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
+  font-weight: 500;
   line-height: 25px;
   letter-spacing: 0.05em;
   color: #ED7839;
@@ -340,13 +350,11 @@ a {
 
 .criar-topico-discussoes h3 {
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 22px;
   line-height: 21px;
   color: #ED7839;
   text-align: center;
-  max-width: 86%;
+  margin-right: 4rem;
 }
 
 .criar-topico-discussoes .content-icons {
@@ -361,6 +369,7 @@ a {
   max-width: 70%;
   margin-left: 150px;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .criar-topico-discussoes hr {
@@ -378,7 +387,7 @@ a {
   width: 120px;
   font-weight: bold;
   transform: translateY(-28px);
-  margin-left: 38%;
+  margin-left: 43%;
 }
 
 /** fim painel discussões **/
@@ -468,68 +477,14 @@ a {
 
 /** fim painel card **/
 
-/** inicio footer **/
+/** inicio footer com img **/
 
 .footer img {
   margin: 1rem 0 0 10rem;
   text-align: center;
 }
 
-/* .footer-wrapper {
-  display: flex;
-  justify-self: space-around;
-  align-self: space-between;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "footer footer footer";
-  margin-left: 55px;
-}
-
-.footer-logo {
-  margin-left: 25px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo h2 {
-  margin: 0;
-  font-size: 86px;
-  color: #341947;
-  margin-left: 8px;
-}
-
-.footer-logo span {
-  font-size: 18px;
-  font-weight: bold;
-  color: #624D71;
-  margin-left: 24px;
-}
-
-.footer-logo button {
-  background: #71478E;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  max-width: 58%;
-  font-size: 18px;
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 0.15em;
-  height: 45px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 18px;
-}
-
-.footer-texto {
-  text-align: left;
-  margin-top: 25px;
-  margin-right: 25px;
-} */
-
-/** fim footer **/
+/** fim footer com img
 
 /** css resumo expandido **/
 
@@ -573,8 +528,13 @@ a {
   line-height: 20px;
 }
 
+.autor-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .autor {
-  margin-left: 65rem;
+  margin-left: 50rem;
   color: #EE7A3A;
   font-weight: bold;
   font-size: 18px;
@@ -584,8 +544,12 @@ a {
   margin-left: 15px;
 }
 
+.coautor-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .coautor {
-  margin-left: 61.2rem;
   color: #EE7A3A;
   font-weight: bold;
   font-size: 18px;
@@ -753,7 +717,6 @@ a {
 .topico-feedback p {
   margin-bottom: 15px;
   font-family: 'Quicksand', sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -768,3 +731,183 @@ a {
 }
 
 /** fim topico criado **/
+
+/** MEDIA QUERIES **/
+/** PRIMEIRO BREAKPOINT - 360x640 **/
+
+.sidenav a.menu-icon {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  /** estrutura principal **/
+  .estrutura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 69px 4fr 1fr;
+  }
+
+  /** sidenav **/
+  .menu-links-list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sidenav {
+    height: 26rem;
+  }
+
+  .sidenav ul {
+    overflow: hidden;
+  }
+
+  .sidenav ul li {
+    margin: 20px;
+    border: none;
+  }
+
+  .sidenav a.menu-icon {
+    display: inline;
+    color: #5C5C5C;
+    margin: 0 0 0 5px;
+    position: absolute;    
+  }
+
+  .sidenav a:hover {
+    background-color: #4D4D4D;
+    color: black;
+  }
+
+  /** tirar a logo e a imagem **/
+  .sidenav img {
+    display: none;
+  }
+  /** **/
+
+  .sidenav-logo {
+    display: none;
+  }
+  /** fim sidenav**/
+
+  /** header **/
+  .header {
+    font-size: 10px;
+    width: 100vw;
+  }
+
+  .header-content {
+    margin: -5px 0 0 2rem;
+    line-height: 11px;
+    flex-direction: column;
+  }
+
+  .header-fake-button {
+    width: 50px;
+    height: 24px;
+    font-size: 8px;  
+  }
+
+  .header-content p {
+    margin-top: -28px;
+    padding: 0;
+  }
+
+  .header-login-picture {
+    width: 50px;
+    margin-left: 15rem;
+    transform: translateY(-2.5rem);
+  }
+  /** fim header **/
+
+  /** conteudo, titulo, botoes dl, doi e star **/
+  .content-titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 500px;
+    margin-left: -4rem;
+  }
+
+  .content-titulo h3 {
+    margin-top: -6px;
+    font-size: 1rem;
+  }
+
+  .button-wrapper {
+    display: flex;
+    width: 930px;
+    margin-bottom: 10px;
+  }
+
+  /** fim conteudo titulo e etc **/
+
+  /** video overlay e box de detalhes **/
+
+
+
+  /** fim video overlay **/
+}
+
+/** FIM MEDIA QUERIES **/
+
+
+
+/** areas comentadas **/
+/** footer antigo comentado **/
+
+/* .footer-wrapper {
+  display: flex;
+  justify-self: space-around;
+  align-self: space-between;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "footer footer footer";
+  margin-left: 55px;
+}
+
+.footer-logo {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 86px;
+  color: #341947;
+  margin-left: 8px;
+}
+
+.footer-logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #624D71;
+  margin-left: 24px;
+}
+
+.footer-logo button {
+  background: #71478E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  max-width: 58%;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 0.15em;
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+.footer-texto {
+  text-align: left;
+  margin-top: 25px;
+  margin-right: 25px;
+} */
+
+/** fim footer antigo **/
