@@ -34,5 +34,6 @@ Mas olha ... eu adorei o desafio, foi um DESAFIO mesmo, ainda mais pra mim que e
 * O Logo no Footer, quebra. Eu tento mudar o width, ele quebra todo o layout (parece que fica mais fino).
 * Outra coisa, é a parte branca do lado direito ... não consegui fazer nada a respeito
 * Eu usei o menu tipo Hamburguer para o Layout Responsivo (canto esquerdo superior), ele funciona, ok; Se você deixar o menu aberto no Mobile e ir pro Desktop direto, o menu continua, MAS se você FECHAR o menu no Mobile e voltar pro Desktop, ele some xD Realmente não consegui resolver! Mas suponho que o usuário do celular não vá direto pro Desktop kkk
+* Alguns elementos se arrastam junto com a janela Mobile do Inspecionar, como o Box de Detalhes do Vídeo e os cards de Resposta Expandida =(
 
 * Tirando estes pontos que não consegui resolver por falta de prática ou conhecimento talvez, ou até porque não fiz uma estrutura inicial adequada, o website funciona até que legal! Gostei muito e vou deixar aqui como experiência e lembrete de que consigo fazer! Ou pelo menos, cheguei bem perto!
