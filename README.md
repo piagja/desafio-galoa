@@ -1,6 +1,7 @@
-## Desafio Galoá
+## Desafio Galoá 
 
 Repositório para o desafio Galoá de Frontend usando HTML + CSS com uma pitadinha de JS.
+* [Website](https://piagja.github.io/desafio-galoa/)
 
 ## Como foi?
 
