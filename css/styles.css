@@ -173,6 +173,10 @@ a {
   width: 140px;
 }
 
+.button-wrapper {
+  display: flex;
+}
+
 /** inicio botão download **/
 
 .content-titulo .content-button-download {
@@ -853,7 +857,7 @@ a {
   }
 
   .box-detalhes {
-    margin-left: 23.2rem;
+    margin-left: 24.2rem;
   }
 
   .box-detalhes-content {
