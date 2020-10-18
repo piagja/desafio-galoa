@@ -750,7 +750,6 @@ a {
 @media (max-width: 640px) {
   /** estrutura principal **/
   .estrutura {
-    position: flex;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 69px 4fr 1fr;
