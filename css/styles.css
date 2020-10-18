@@ -534,7 +534,6 @@ a {
 }
 
 .autor {
-  margin-left: 50rem;
   color: #EE7A3A;
   font-weight: bold;
   font-size: 18px;
@@ -733,7 +732,6 @@ a {
 /** fim topico criado **/
 
 /** MEDIA QUERIES **/
-/** PRIMEIRO BREAKPOINT - 360x640 **/
 
 .sidenav a.menu-icon {
   display: none;
@@ -772,11 +770,6 @@ a {
     color: #5C5C5C;
     margin: 0 0 0 5px;
     position: absolute;    
-  }
-
-  .sidenav a:hover {
-    background-color: #4D4D4D;
-    color: black;
   }
 
   /** tirar a logo e a imagem **/
@@ -860,12 +853,12 @@ a {
   }
 
   .box-detalhes {
-    margin-left: 26.5rem;
+    margin-left: 23.2rem;
   }
 
   .box-detalhes-content {
     font-size: 10px;
-    width: 252px;
+    width: 222px;
   }
   /** fim video overlay **/
 
@@ -889,6 +882,154 @@ a {
   }
 
   /** fim conteudo resumo **/
+
+  /** inicio container discussoes **/
+  .container-discussoes {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 2rem;
+    width: 20.6%;
+  }
+  
+  .criar-topico-discussoes h3 {
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .criar-topico-discussoes .content-icons {
+    margin-left: 4rem;
+  }
+  
+  .criar-topico-discussoes blockquote {
+    margin-left: 2.4rem;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+  }
+  
+  .criar-topico-discussoes hr {
+    margin-top: 3rem;
+  }
+  
+  .content-button {
+    margin-left: 4.5rem;
+  }
+
+  /** toggle topico **/
+  .toggle-topico-discussoes {
+    margin-bottom: 10px;
+    height: 450px;
+  }
+  
+  .criando-topico-discussoes {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  
+  .criando-topico-form strong {
+    font-size: 16px;
+  }
+  
+  .criando-topico-discussoes small {
+    width: 200px;
+    margin-left: 1rem;
+  }
+  
+  .criando-topico-form input {
+    height: 3rem;
+  }
+  
+  .criando-topico-form textarea {
+    margin-left: -7px;
+  }
+  
+  .criando-topico-ferramentas {
+    margin-left: -6px;
+  }
+  
+  .criando-topico-ferramentas button {
+    width: 100px;
+  }
+  /** fim toggle topico **/
+
+  /** topico criado **/
+    .topico-criado-titulo {
+      font-size: 15px;
+    }
+
+    .topico-criado-texto {
+      font-size: 12px;
+    }
+
+    .topico-criado a {
+      font-size: 15px;
+    }
+
+    .topico-feedback {
+      width: 100%;
+      margin: 3rem 0 0 6px;
+    }
+  /** fim topico criado **/
+
+  /** inicio cards **/
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card small {
+      font-size: 12px;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+
+    .card span {
+      font-size: 14px;
+    }
+
+    .autor,
+    .coautor {
+      font-size: 14px;
+    }
+
+    .coautor {
+      margin-left: 10px;
+    }
+
+    .card-options {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-expandido {
+      width: 100%;
+    }
+
+    .card-replies-expandido {
+      width: 42vw;
+      margin-left: 1rem;
+      border-bottom: 0.1px solid #ccc;
+    }
+
+    .card-replies-expandido strong {
+      font-size: 14px;
+    }
+
+    .card-replies-expandido p {
+      font-size: 12px;
+    }
+  /**fim cards **/
+
+  /** footer **/
+  .footer img {
+    margin-left: 1rem;
+  }
+  /** fim footer **/
+
+  /** fim container discussoes **/
 }
 
 /** FIM MEDIA QUERIES **/
