@@ -238,9 +238,9 @@ a {
 }
 
 .box-detalhes > p {
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
   font-size: 19px;
   font-weight: 500;
   line-height: 25px;
@@ -255,9 +255,6 @@ a {
 }
 
 .box-detalhes-content {
-  font-family: 'Quicksand', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 100%;
   letter-spacing: 0.03em;
