@@ -4,16 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /** inicio config global **/
-
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 body, p, h1, ul, li, blockquote {
   margin: 0;
   padding: 0;
@@ -741,6 +731,13 @@ a {
 
 /** fim topico criado **/
 
+/** CSS do ToggleMenu **/
+.menu-links-list {
+  display: block;
+}
+
+/** CSS do ToggleMenu **/
+
 /** MEDIA QUERIES **/
 
 .sidenav a.menu-icon {
@@ -749,6 +746,14 @@ a {
 
 @media (max-width: 640px) {
   /** estrutura principal **/
+  .menu-links-list {
+    display: none;
+  }
+
+  .menu-show {
+    display: block;
+  }
+
   .estrutura {
     display: grid;
     grid-template-columns: 1fr;

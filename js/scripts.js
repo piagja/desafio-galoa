@@ -67,18 +67,6 @@ function reload () {
 
 /* menu hamburger toggle */
 function toggleMenu () {
-  const links = document.querySelector('.menu-links')
   const ul = document.querySelector('.menu-links-list')
-
-  if (ul.style.display !== 'none') {
-    ul.style.display = 'none'
-  } else {
-    ul.style.display = 'block'
-  }
-
-  // if (ul.style.display === 'block') {
-  //   ul.style.display = 'none'
-  // } else {
-  //   ul.style.display = 'block'
-  // }
+  ul.classList.toggle('menu-show')
 }
